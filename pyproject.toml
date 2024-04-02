@@ -1,0 +1,39 @@
+[tool.poetry]
+description = "Customer support agent using LLM."
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+annotated-types = "0.6.0"
+certifi = "2024.2.2"
+charset-normalizer = "3.3.2"
+idna = "3.6"
+jsonpatch = "1.33"
+jsonpointer = "2.4"
+langchain-core = "0.1.38"
+langgraph = "0.0.30"
+langsmith = "0.1.38"
+orjson = "3.10.0"
+packaging = "23.2"
+pydantic = "2.6.4"
+pydantic_core = "2.16.3"
+PyYAML = "6.0.1"
+requests = "2.31.0"
+tenacity = "8.2.3"
+typing_extensions = "4.10.0"
+urllib3 = "2.2.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+langchain = "^0.1.0"
+langchainhub = "^0.1.14"
+langchain-openai = "^0.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
